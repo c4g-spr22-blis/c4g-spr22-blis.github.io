@@ -19,12 +19,12 @@ BLIS runs on Windows, but the software it's built on started on *nix servers.For
 1. Create a virtual machine of the latest Ubuntu (can be either Server edition or Desktop edition, but you will be using the terminal a bit either way)
 2. Familiarize yourself with the [Web Servers](https://ubuntu.com/server/docs/web-servers-apache) section of the Ubuntu Server Guide. Goals:
     1. Install Apache
-    2. View the sample web page that prooves Apache is running
+    2. View the sample web page that proves Apache is running
     3. If you are unsure of the purpose of a web server or how the HTTP protocol works, you can read about [HTTP on the MDN website](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 3. Install [MySQL on Ubuntu](https://ubuntu.com/server/docs/databases-mysql) (just the Installation section, unless you want to read further).
 4. Read the section on [LAMP Applications](https://ubuntu.com/server/docs/lamp-applications). Goals:
     1. Install phpMyAdmin and view the interface in your browser
-5. Now that you have a LAMP stack (good job!) you get to install WordPress! Their installation process used to be called "The Famous Five-Minute Install" but it seems like they changed it. [Regardless, you can read up here.](https://wordpress.org/support/article/how-to-install-wordpress/). Goals:
+5. Now that you have a LAMP stack (good job!) you get to install WordPress! Their installation process used to be called "The Famous Five-Minute Install" but it seems like they changed it. [Regardless, you can read up here](https://wordpress.org/support/article/how-to-install-wordpress/). Goals:
     1. Make a wordpress blog that's hosted in your VM.
 
 That's the *AMP Stack!
