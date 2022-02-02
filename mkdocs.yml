@@ -1,1 +1,3 @@
 site_name: "C4G BLIS: Spring '22"
+theme:
+  name: material
