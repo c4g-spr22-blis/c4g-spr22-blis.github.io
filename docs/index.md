@@ -5,6 +5,7 @@ Team Members: Kristy Sakano, Rita Borelli, Victor Li, Mitchell Rysavy
 ## Partner Organization
 
 Our partner organization is the group of labs using the C4G BLIS tool currently. C4G Basic Laboratory Information System (BLIS) is an open-source system to track patients, specimens, and laboratory results. We are working in collaboration with Dr. Vempala to coordinate communication with country level BLIS coordinators. Individual labs are using the local BLIS tool currently, but some regions have reliable internet and have made requests for an online version of the tool. We aim to work on the following specific needs:
+
 * Provide a way to host BLIS in a persistent,
 Internet-connected way that is “always on”
 * Provide a way to see the data from many labs
