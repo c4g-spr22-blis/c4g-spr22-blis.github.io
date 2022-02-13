@@ -1,6 +1,14 @@
 # CS 6150: Computing For Good
 
-Team Members: Kristy Sakano, Rita Borelli, Victor Li, Mitchell Rysavy
+## Team
+
+Rita Borelli - DevOps
+
+Victor Li - Software Developer
+
+Mitchell Rysavy - Team Lead, Backend/Infrastructure Developer
+
+Kristy Sakano - Software Developer
 
 ## Partner Organization
 
@@ -11,6 +19,8 @@ Internet-connected way that is “always on”
 at once
 * Provide an updated FAQ to answer immediate
 questions regarding BLIS’ operations
+
+---
 
 ## Project Goals
 
@@ -36,10 +46,10 @@ We are awaiting a chance to get input from the stakeholders on their preference,
 
 We also outline a plan for development, evaluation, and deployment.
 
-* Development: we’ll develop new features utilizing version control with a forked version of the repository.
-* Evaluation: we’ll ask end users a few quantitative questions (how often they would use each new feature, on a scale of 1-5; how easy to
+* *Development:* we’ll develop new features utilizing version control with a forked version of the repository.
+* *Evaluation:* we’ll ask end users a few quantitative questions (how often they would use each new feature, on a scale of 1-5; how easy to
 use it was, etc.), as well as solicit qualitative feedback (is there anything they would change to make the new feature easier to use).
-* Deployment: after new features are ready for deployment, we’ll submit pull requests to the main BLIS repository. We can provide a BLIS
+* *Deployment:* after new features are ready for deployment, we’ll submit pull requests to the main BLIS repository. We can provide a BLIS
 update package for clients to use, if necessary.
 
 Finally, we note an important consideration that affected design choices. Since backwards compatibility is a key feature of BLIS, developing a hybrid server/desktop version is probably not feasible. Given that, we can add a feature to the current version of BLIS that can export and periodically upload data to a central node, which can be designed as a full server-side/cloud application.
