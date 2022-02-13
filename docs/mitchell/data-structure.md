@@ -7,7 +7,7 @@ Notes as I look into the database and structure of the databases, and the backup
 |Username|Password|Description|
 |-|-|-|
 |cameroon_dir|dir123|Director's view|
-|testlab1_admin|admin123|Lab admin account (doesn't work)|
+|testlab1_admin|admin123|Lab admin account|
 |testlab1_tech1|tech123|Lab tech account|
 |testlab1_tech2|tech123|Lab tech account
 
