@@ -1,16 +1,13 @@
-# CS 6150: Computing For Good
+# Home
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SDEhfS0qGiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Team
 
-Rita Borelli - DevOps
-
-Victor Li - Software Developer
-
-Mitchell Rysavy - Team Lead, Backend/Infrastructure Developer
-
-Kristy Sakano - Software Developer
+* Rita Borelli - DevOps
+* Victor Li - Software Developer
+* Mitchell Rysavy - Team Lead, Backend/Infrastructure Developer
+* Kristy Sakano - Software Developer
 
 ## Partner Organization
 
