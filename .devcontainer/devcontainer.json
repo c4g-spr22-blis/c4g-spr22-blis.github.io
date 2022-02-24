@@ -2,6 +2,5 @@
     "build": {
         "dockerfile": "./Dockerfile",
         "context": ".."
-    },
-    "postAttachCommand": ".devcontainer/serve-mkdocs.sh"
+    }
 }
