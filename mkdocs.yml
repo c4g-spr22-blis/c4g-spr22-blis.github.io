@@ -1,3 +1,18 @@
 site_name: "C4G BLIS: Spring '22"
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+
+plugins:
+  - git-revision-date
+
+repo_url: https://github.com/c4g-spr22-blis/c4g-spr22-blis.github.io
+
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/github
