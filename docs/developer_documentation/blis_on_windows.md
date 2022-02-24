@@ -17,7 +17,6 @@ Installing command-line tools can be done with a Windows package manager such as
 
 ## Instructions
 
-
 !!! warning
     These instructions are subject to change.
 
