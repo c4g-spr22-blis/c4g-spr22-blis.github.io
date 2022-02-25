@@ -6,11 +6,11 @@
 ### Q: How do I add a new patient?
 <b>A</b>: To add a new patient, navigate to the Registration tab. Search for the patient by name, number, or ID. 
 
-![patient_search_screenshot](../images/patient_search.jpg)
+![patient_search_screenshot](images/patient_search.jpg)
 
 After you search for the patient, you will see an option to add new patient. Click the link to proceed. 
 
-![patient_search_screenshot](../images/add_patient.png)
+![patient_search_screenshot](images/add_patient.png)
 
 
 

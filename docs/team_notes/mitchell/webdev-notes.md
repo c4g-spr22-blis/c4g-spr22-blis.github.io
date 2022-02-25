@@ -1,6 +1,6 @@
 # Mitchell's Fast & Furious Web Development Crash Course
 
-![when you're here, you're family](../images/furious.gif)
+![when you're here, you're family](../../images/furious.gif)
 
 This is my super-duper quick, off-the-cuff, and totally unprofessional guide to getting up to speed in web development as it related to BLIS.
 
