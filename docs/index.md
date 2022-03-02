@@ -9,6 +9,40 @@
 * Mitchell Rysavy - Team Lead, Backend/Infrastructure Developer
 * Kristy Sakano - Software Developer
 
+
+## Project Status (last updated 2022 March 02)
+
+For the remainder of the semester, we are focusing on **creating a version of BLIS that can perform periodic updates to a version of BLIS running on a remote server.**
+
+```mermaid
+graph TD
+    A[BLIS for Windows / individual lab machine]-->B[BLIS for Cloud / central BLIS instance];
+    C[BLIS for Windows / individual lab machine]-->|Backups run periodically and send data|B
+    D[BLIS for Windows / individual lab machine]-->B
+```
+
+The architecture will look roughly like:
+
+```mermaid
+graph TD
+    B[Background job: Is it time to run a backup?]-->A
+    A[BLIS for Windows]-->|No|A
+    A-->|Yes, initiate backup|C[Backup logic creates formatted data dump]
+    C-->|Upload data|D[BLIS for Cloud]
+    D-->|Read data dump, import into database|D
+
+
+```
+
+We are splitting up the work like this:
+
+|Task|Assignee|
+|-|-|
+|Create UI for configuring backup server in BLIS for Windows|Rita|
+|Create background job to initiate a data dump and send data to the central server|Kristy|
+|Implement the logic and define the format for dumping the data|Mitchell|
+|Create endpoint on BLIS for Cloud to receive and import a data dump|Victor|
+
 ## Partner Organization
 
 Our partner organization is the group of labs using the C4G BLIS tool currently. C4G Basic Laboratory Information System (BLIS) is an open-source system to track patients, specimens, and laboratory results. We are working in collaboration with Dr. Vempala to coordinate communication with country level BLIS coordinators. Individual labs are using the local BLIS tool currently, but some regions have reliable internet and have made requests for an online version of the tool. We aim to work on the following specific needs:
@@ -19,8 +53,6 @@ Internet-connected way that is “always on”
 at once
 * Provide an updated FAQ to answer immediate
 questions regarding BLIS’ operations
-
----
 
 ## Project Goals
 
