@@ -26,8 +26,8 @@ Installing command-line tools can be done with a Windows package manager such as
     $ git clone https://github.com/c4g-spr22-blis/BLIS.git
     ```
 
-1. Download the [BLISRuntime.zip](http://blis.cc.gatech.edu/files/BLISRuntime.zip) file from the C4G website
-1. Unzip BLISRuntime.zip into the BLIS repository
+1. Download the latest version of [BLISRuntime.zip](https://github.com/c4g-spr22-blis/BLISRuntime/archive/refs/heads/main.zip) archive
+1. Unzip BLISRuntime.zip into the BLIS repository directory
 1. Run `BLIS.exe`
 
 The bundled Firefox will start and you can use BLIS normally, or make changes to files in the `htdocs/` directory.
