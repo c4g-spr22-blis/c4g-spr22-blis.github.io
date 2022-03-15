@@ -2,7 +2,9 @@
 
 There is experimental support for running BLIS on a cloud provider in the form of a Docker container!
 
-## Prerequisites
+## Quick Version
+
+**Skip this section for step-by-step instructions on getting BLIS running.**
 
 1. You must already have an account with a cloud provider to continue, and you must create a virtual machine running a relatively modern Linux distribution. For testing, Digital Ocean and the minimum-level $5/month droplet was used.
 
