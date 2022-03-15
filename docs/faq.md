@@ -1,5 +1,8 @@
 # Frequently Asked Questions
 
+### Q: I'm using BLIS for Windows and everytime I try to run the executable, it crashes! What's going on?
+<b>A</b>: Ensure that the zipped files from the Runtime.zip are extracted directly into the BLIS directory. They should not remain in a Runtime folder.
+
 ### Q: I am trying out BLIS. How do I login?
 <b>A</b>: Please login using the credentials: testlab1_admin/admin123 (as admin) or testlab1_tech1, testlab1_tech2/tech123 (as lab technician).
 
