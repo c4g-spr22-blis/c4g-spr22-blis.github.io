@@ -10,9 +10,43 @@ There is experimental support for running BLIS on a cloud provider in the form o
 
 3. You must [install Docker Compose](https://docs.docker.com/compose/). Either V1 (`docker-compose`) or V2 (`docker compose`) will work, but for this example, **docker-compose V1 will be used.**
 
+## Creating a Droplet
+
+1. You can follow the [instructions on DigitalOcean to create a droplet here](https://docs.digitalocean.com/products/droplets/how-to/create/).
+  - Any Linux distribution should work, but for the purposes of this guide, it is assumed you will use Ubuntu.
+2. After creating the droplet, make sure you either note down the root user password you set, or you have an key configured for passwordless login.
+3. [Follow the instructions here to connect to the droplet via SSH](https://docs.digitalocean.com/products/droplets/how-to/connect-with-ssh/).
+
+## Installing Docker
+
+1. When you are SSH'd into the droplet, in the terminal, run these commands to install Docker:
+
+  ```bash
+   sudo apt-get update
+   sudo apt-get install ca-certificates curl gnupg lsb-release
+
+   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg \
+     --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+   
+   echo \
+     "deb [arch=$(dpkg --print-architecture) \
+     signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] \
+     https://download.docker.com/linux/ubuntu \
+     $(lsb_release -cs) stable" | sudo tee \
+     /etc/apt/sources.list.d/docker.list > /dev/null
+  ```
+
+2. Install Docker Compose V1:
+
+  ```bash
+   sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  ```
+
+Now you're ready to run BLIS!
+
 ## Running BLIS
 
-1. Clone the BLIS repository
+1. In the DigitalOcean Droplet via SSH, clone the BLIS repository:
 
     ```bash
     $ git clone https://github.com/c4g-spr22-blis/BLIS.git
@@ -34,3 +68,13 @@ These commands will set up two containers:
 
 1. The `app` container: This contains all of the BLIS source code, as well as the Apache2 web server and PHP 5.6 runtime.
 1. The `db` container: This contains the MySQL 5.7 database. The files inside the `docker/database/` folder are executed when the container is created, providing the seed data that the BLIS database needs to start.
+
+## Accessing BLIS
+
+Now, BLIS should be running. You can access it by visiting a URL that looks like:
+
+```plain
+http://[your droplet IP address]/
+```
+
+Substitute your droplet IP address above - you should have this from SSHing into it.
