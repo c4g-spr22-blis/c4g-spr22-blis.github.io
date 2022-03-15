@@ -13,10 +13,10 @@ Over the past semester, we've been working to deploy a version of BLIS that is c
 
 For the first part of our peer review task, please open the short form, accessible here:
 
-[https://forms.office.com/r/YG4cMaC0rP](https://forms.office.com/r/YG4cMaC0rP).
+[https://forms.office.com/r/YG4cMaC0rP](https://forms.office.com/r/YG4cMaC0rP)
 
 
-Instructions for this peer review task is embedded in the form. The first part of the peer review task ends after Task F. Thank you for providing your feedback!
+Instructions for this peer review task is embedded in the form. The first part of the peer review task ends after Task F; please do not close the survey and follow the instructions to complete the second half of the peer review evaluations.
 
 
 ## Peer Review Task #2: Pushing a data backup to BLIS Cloud
@@ -56,3 +56,5 @@ You do not need to download the zipped folder to your disk.
 5. Click "Send data backup to server" to send the data backup to the BLIS Cloud. A new window will pop-up and inform you that the data has been pushed to the server successfully.
 
 6. In a new window, please log into the BLIS Cloud at [http://188.166.124.131/home.php](http://188.166.124.131/home.php). **Where would we go to verify that our data dump was pushed correctly?**
+
+7. After verifying that the data backup was pushed to the BLIS Cloud successfuly, please finish the last survey question (Task G) and submit the survey on Google Forms. Thank you for providing your feedback!
