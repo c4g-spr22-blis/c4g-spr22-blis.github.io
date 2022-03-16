@@ -35,37 +35,37 @@ Testimonies and user feedback from labs in Africa indicate that internet availab
 !!! info "Note"
     After logging in, if you are prompted to update BLIS to version 3.72, please do so!
 
-![update_version](images/update_version.png)
+    ![update_version](images/update_version.png)
 
 
 Our next set of instructions will step you through the process of a BLIS lab manager connecting to the BLIS Cloud server and creating a key.
 
-`&nbsp;3.` Click on the **Lab Configuration** tab, and then **Blis Online** on the left-hand side (you may need to scroll down to see the option; if the UI is blank, please read the FAQ Question "What's going on with the UI?").
+3. Click on the **Lab Configuration** tab, and then **Blis Online** on the left-hand side (you may need to scroll down to see the option; if the UI is blank, please read the FAQ Question "What's going on with the UI?").
 
-`&nbsp;4.` Please enter in the BLIS Cloud ip address **188.166.124.131** and click **Save**. We have not yet built in UI functionality to confirm the save, FYI.
+4. Please enter in the BLIS Cloud ip address **188.166.124.131** and click **Save**. We have not yet built in UI functionality to confirm the save, FYI.
 
-![save_ip](images/save_ip.png)
+    ![save_ip](images/save_ip.png)
 
-`&nbsp;5.` Click on the **Manage Backup Keys** tab on the lefthand side. Next, click on **Download Public Key** button in green to download the public key for encryption purposes.
+5. Click on the **Manage Backup Keys** tab on the lefthand side. Next, click on **Download Public Key** button in green to download the public key for encryption purposes.
 
-![download_publickey](images/download_publickey.png)
+    ![download_publickey](images/download_publickey.png)
 
-`&nbsp;6.` After downloading the public key, click on the **Add Key Alias** button on the same page. You can put any name in the key alias, but for the purposes of this exercise, we will use "my_pubkey" as an example. Please upload the previously downloaded public key, and click **Add** to finish. A textbox prompt will say, "Key added successfully" upon a successful completion.
-
-
-![successful_key](images/successful_key.png)
-
-`&nbsp;7.` Next, navigate to the **Backup Data** tab at the top selection bar. We are still working on the UI for the various languages that C4G BLIS supports, so please click *Default* at the bottom of the screen. This issue will be fixed in our final iteration.
-
-![setting_default](images/setting_default.png)
+6. After downloading the public key, click on the **Add Key Alias** button on the same page. You can put any name in the key alias, but for the purposes of this exercise, we will use "my_pubkey" as an example. Please upload the previously downloaded public key, and click **Add** to finish. A textbox prompt will say, "Key added successfully" upon a successful completion.
 
 
-`&nbsp;8.` Next, please input the name you used previously for the key alias, "my_pubkey". Please select **General Backup** and **Upload Public Key for Encryption**. Then, click **Browse** and upload the key that you previously saved to your Downloads.
+    ![successful_key](images/successful_key.png)
 
-`&nbsp;9.` (Optional) Click **Download local .ZIP backup**. It will send you to a new window prompting you to download a zip folder and save it to your disk. For the purposes of this peer evaluation, you do not need to download the zipped folder to your disk. You will see the following image if done correctly:
+7. Next, navigate to the **Backup Data** tab at the top selection bar. We are still working on the UI for the various languages that C4G BLIS supports, so please click *Default* at the bottom of the screen. This issue will be fixed in our final iteration.
 
- ![download_zip](images/download_zip.png)
+    ![setting_default](images/setting_default.png)
 
-`&nbsp;10.` Click **Send data backup to server** to send the data backup to the BLIS Cloud. A new window will pop-up and inform you that the data has been pushed to the server successfully.
 
-`&nbsp;11.`  Finally, please finish the last survey question (Task G) and submit the survey on Google Forms. Thank you for providing your feedback!
+8. Next, please input the name you used previously for the key alias, "my_pubkey". Please select **General Backup** and **Upload Public Key for Encryption**. Then, click **Browse** and upload the key that you previously saved to your Downloads.
+
+9. (Optional) Click **Download local .ZIP backup**. It will send you to a new window prompting you to download a zip folder and save it to your disk. For the purposes of this peer evaluation, you do not need to download the zipped folder to your disk. You will see the following image if done correctly:
+
+    ![download_zip](images/download_zip.png)
+
+10. Click **Send data backup to server** to send the data backup to the BLIS Cloud. A new window will pop-up and inform you that the data has been pushed to the server successfully.
+
+11.  Finally, please finish the last survey question (Task G) and submit the survey on Google Forms. Thank you for providing your feedback!
