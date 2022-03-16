@@ -25,3 +25,10 @@
 <b>A</b>: In the Manager view, naviate to the Lab Configuration Tab, and then BLIS Online. Enter in the IP address of the BLIS server.
 
 
+### Q: Sometimes, I load a page and the button text disappears. What's going on with the UI?
+
+<b>A</b>: We're still working out the bugs with the UI, but chances are, you might need to click on the Default language option at the bottom of the screen.
+
+![blank_ui](images/blank_ui.png)
+
+BLIS has several language options to cater to a diverse community, and we're still working to implement our changes in all of them! Thank you for your patience.
