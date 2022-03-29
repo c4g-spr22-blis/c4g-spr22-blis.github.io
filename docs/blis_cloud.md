@@ -36,12 +36,17 @@ There is experimental support for running BLIS on a cloud provider in the form o
      https://download.docker.com/linux/ubuntu \
      $(lsb_release -cs) stable" | sudo tee \
      /etc/apt/sources.list.d/docker.list > /dev/null
+     
+  sudo apt-get update
+  sudo apt-get install -y docker-ce docker-ce-cli containerd.io
   ```
 
 2. Install Docker Compose V1:
 
   ```bash
    sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   
+   chmod +x /usr/local/bin/docker-compose
   ```
 
 Now you're ready to run BLIS!
@@ -80,3 +85,14 @@ http://[your droplet IP address]/
 ```
 
 Substitute your droplet IP address above - you should have this from SSHing into it.
+
+## Pitfalls you may encounter when setting up the service:
+
+1. There maybe a error when you call `docker-compose` API, the error will show similar to:
+
+  ```bash
+  root@blis-test:~/BLIS/docker#docker-compose
+  -bash: /usr/local/bin/docker-compose: Permission denied
+  ```
+Using a `chmod +x /usr/local/bin/docker-compose` will help the work.
+
