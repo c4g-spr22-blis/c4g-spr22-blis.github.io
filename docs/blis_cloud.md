@@ -86,6 +86,18 @@ http://[your droplet IP address]/
 
 Substitute your droplet IP address above - you should have this from SSHing into it.
 
+## Upgrading BLIS
+
+When you want to upgrade BLIS, you can follow these commands to pull the latest version of the Docker image and restart the containers:
+
+```bash
+$ docker-compose down
+$ docker-compose pull app
+$ docker-compose up -d
+```
+
+And that's it!
+
 ## Pitfalls you may encounter when setting up the service:
 
 1. There maybe a error when you call `docker-compose` API, the error will show similar to:
