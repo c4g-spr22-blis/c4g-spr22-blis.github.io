@@ -1,8 +1,8 @@
 # Home
 
-## [Peer Evaluations - Click Here!](https://c4g-spr22-blis.github.io/peer_evaluations/)
+## Project Demo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SDEhfS0qGiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4u8ZT4SDcQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Team
 
@@ -12,63 +12,30 @@
 * Kristy Sakano - Software Developer
 
 
-## Project Status (last updated 2022 March 02)
 
-For the remainder of the semester, we are focusing on **creating a version of BLIS that can perform periodic updates to a version of BLIS running on a remote server.**
+## Project Status (last updated 2022 April 08)
 
-```mermaid
-graph TD
-    A[BLIS for Windows / individual lab machine]-->B[BLIS for Cloud / central BLIS instance];
-    C[BLIS for Windows / individual lab machine]-->|Backups run periodically and send data|B
-    D[BLIS for Windows / individual lab machine]-->B
-```
-
-The architecture will look roughly like:
-
-```mermaid
-graph TD
-    B[Background job: Is it time to run a backup?]-->A
-    A[BLIS for Windows]-->|No|A
-    A-->|Yes, initiate backup|C[Backup logic creates formatted data dump]
-    C-->|Upload data|D[BLIS for Cloud]
-    D-->|Read data dump, import into database|D
-
-
-```
-
-We are splitting up the work like this:
-
-|Task|Assignee|
-|-|-|
-|Create UI for configuring backup server in BLIS for Windows|Rita|
-|Create background job to initiate a data dump and send data to the central server|Kristy|
-|Implement the logic and define the format for dumping the data|Mitchell|
-|Create endpoint on BLIS for Cloud to receive and import a data dump|Victor|
+After a few partner meetings, **we have pivoted to _only_ creating a version of BLIS that runs on a Docker container and can be set up as a cloud service.**
 
 ## Partner Organization
 
 Our partner organization is the group of labs using the C4G BLIS tool currently. C4G Basic Laboratory Information System (BLIS) is an open-source system to track patients, specimens, and laboratory results. We are working in collaboration with Dr. Vempala to coordinate communication with country level BLIS coordinators. Individual labs are using the local BLIS tool currently, but some regions have reliable internet and have made requests for an online version of the tool. We aim to work on the following specific needs:
 
-* Provide a way to host BLIS in a persistent,
-Internet-connected way that is “always on”
-* Provide a way to see the data from many labs
-at once
-* Provide an updated FAQ to answer immediate
-questions regarding BLIS’ operations
+* Provide a way to host BLIS in a persistent, Internet-connected way that is “always on”
+* Provide a way to see the data from many labs at once
+* Provide an updated FAQ to answer immediate questions regarding BLIS’ operations
 
 ## Project Goals
 
 ### Main Goal
 
-Currently, there is a Country Director mode of operation that allows a director to view the data of multiple labs at once by having those labs export a backup file and import it from the country director side. This could be streamlined by providing a con- figuration option from individual lab BLIS instances to send periodic backups to a central server which can be ingested and analyzed there.
+* Create a version of BLIS that runs in Docker container on a cloud instance
+* Provide [documentation](blis_cloud.md) on setting up BLIS on a cloud server
+* Update user guide for BLIS to account for the new version
 
-### Side Goals
+### Achievements
 
-*Data Visualization:* Currently, in the country director view, we can see the aggregated data from each of the individual labs. This data can be presented to depict temporal changes of a disease progression or tests conducted across the various labs employing BLIS. We are considering various interactive and static visualization options. Aggregate data visualization will have limited access to only the country director view, as it is intended for policy decision making purposes.
-
-*Updating FAQ:* The current set of frequently asked questions is quite limited. Our stretch goal here is to expand the information covered and move the FAQs to a seperate page.
-
-*Updating PHP verions:* The version of PHP that BLIS uses is quite outdated. We propose updating BLIS to use a more recent PHP version in preparation for a future version of BLIS that can be containerized and deployed to the cloud.
+`TODO`
 
 ## Feedback and Development
 
