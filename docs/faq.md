@@ -9,26 +9,25 @@
 ### Q: How do I look up a patient in our system?
 <b>A</b>: Navigate to the Registration tab and search for the patient by name, number, or ID.
 
-![patient_search_screenshot](images/patient_search.jpg)
+<img src="images/patient_search.png" width="70%"/>
 
 ### Q: How do I add a new patient?
 <b>A</b>: To add a new patient, navigate to the Registration tab. Do not enter anything into the search bar and click 'Search'. You will see an option to add new patient appear. Click the link to proceed. 
 
-![patient_search_screenshot](images/add_patient.png)
+<img src="images/add_patient.png" width="70%" />
 
 ### Q: How do I add a new Specimen to a patient?
 <b>A</b>: After pulling open the patient's profile, click the 'Register New Specimen' hyperlink on the righthand side. 
 
-![new_specimen_screenshot](images/patient_profile.png)
+<img src="images/patient_profile.png" width="70%" />
 
 ### Q: How do I configure BLIS to upload data to the central web instance [Manager View Only]?
 <b>A</b>: In the Manager view, naviate to the Lab Configuration Tab, and then BLIS Online. Enter in the IP address of the BLIS server.
 
+### Q: How do I change the language of BLIS?
 
-### Q: Sometimes, I load a page and the button text disappears. What's going on with the UI?
+<b>A</b>: You can change the language to either the English or French version by clicking on the preferred language in the footer menu.
 
-<b>A</b>: We're still working out the bugs with the UI, but chances are, you might need to click on the Default language option at the bottom of the screen.
-
-![blank_ui](images/blank_ui.png)
+<img src="images/language.png" width="70%" />
 
 BLIS has several language options to cater to a diverse community, and we're still working to implement our changes in all of them! Thank you for your patience.
