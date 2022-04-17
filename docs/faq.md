@@ -31,3 +31,9 @@
 ![language_screenshot](images/language.png)
 
 BLIS has several language options to cater to a diverse community, and we're still working to implement our changes in all of them! Thank you for your patience.
+
+### Q: I'm logged in as an admin user but I want to work as a lab technician. How do I switch to the technician interface?
+
+<b>A</b>: The <i>Work as Technician</i> option can be selected from the top right side of the header next to the logout button. 
+
+![work_as_technician_screenshot](images/work_as_technician.png)
