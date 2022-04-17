@@ -37,3 +37,14 @@ BLIS has several language options to cater to a diverse community, and we're sti
 <b>A</b>: The <i>Work as Technician</i> option can be selected from the top right side of the header next to the logout button. 
 
 ![work_as_technician_screenshot](images/work_as_technician.png)
+
+### Q: What are the different lab tests that BLIS can be used for?
+
+<b>A</b>: The lab tests that BLIS can be used for are configured by your administrator, so they vary from lab to lab. Check with you local adminstrator for more information. 
+
+### Q: How do I add new BLIS users to the system?
+
+<b>A</b>: An administrator can add new users. The types of users can also be configured. To add a new user, you must be logged in as an adminstrator. Go the the <i>Lab Configuration</i> tab and select the User Accounts option (from this page you can also add new user types, e.g. technicians or administrators. Click on <i>Add New Account</i> and fill out the form that pops up to add a new user. Be sure to click the Add button, not Close at the bottom of the form. permissions. 
+
+![add_new_account](images/add_new_account.png)
+![new_account_form](images/new_account_form.png)
