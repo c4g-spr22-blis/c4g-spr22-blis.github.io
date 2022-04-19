@@ -20,6 +20,6 @@ jobs:
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           CONFIG_FILE: mkdocs.yml
-          EXTRA_PACKAGES: libffi py3-pip py3-pillow py3-cffi py3-brotli gcc g++ musl-dev python3-dev pango
+          EXTRA_PACKAGES: libffi libffi-dev py3-pip py3-pillow py3-cffi py3-brotli gcc g++ musl-dev python3-dev pango
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REQUIREMENTS: requirements.txt
