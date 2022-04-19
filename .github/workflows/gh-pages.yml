@@ -20,6 +20,6 @@ jobs:
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           CONFIG_FILE: mkdocs.yml
-          EXTRA_PACKAGES: pango
+          EXTRA_PACKAGES: pango gcc musl-dev
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REQUIREMENTS: requirements.txt
