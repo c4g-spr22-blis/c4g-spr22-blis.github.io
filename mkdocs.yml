@@ -15,6 +15,7 @@ markdown_extensions:
 plugins:
   - git-revision-date
   - search
+  - with-pdf
 
 edit_uri: edit/main/docs/
 repo_url: https://github.com/c4g-spr22-blis/c4g-spr22-blis.github.io
