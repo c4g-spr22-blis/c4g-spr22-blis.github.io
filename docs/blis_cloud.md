@@ -98,7 +98,69 @@ $ docker-compose up -d
 
 And that's it!
 
-## Pitfalls you may encounter when setting up the service:
+## Adding an HTTPS certificate to BLIS
+
+By default, BLIS will only communicate over HTTP on port 80 (see `docker/docker-compose.yml` 
+for the full port configuration.)
+
+BLIS includes support for automatically retrieving and configuring a certificate from
+[Let's Encrypt](https://letsencrypt.org/) for communicating over HTTPS. However, you must
+already have a domain configured and pointing at the host you are running BLIS on. **This process
+is not included in this guide.** If you are using DigitalOcean, [there is a guide you can use as
+a jumping-off point here](https://docs.digitalocean.com/products/networking/dns/quickstart/).
+
+### After your domain is pointing to your BLIS host IP address
+
+You will need to add the `BLIS_SERVER_NAME` to the `docker-compose.yml` configuration:
+
+```yml
+services:
+  app:
+    # This image is automatically built and pushed from the GitHub action in .github/workflows/ folder
+    image: "ghcr.io/c4g-spr22-blis/blis:latest"
+    environment:
+      DB_HOST: 'db'
+      DB_PORT: '3306'
+      DB_USER: '[blis database user here]'
+      DB_PASS: '[blis database password here]'
+      # Add or uncomment this line, and change the domain value to your own
+      BLIS_SERVER_NAME: 'blis.mydomain.com'
+```
+
+Then, (re)start BLIS:
+
+```bash
+# if BLIS is running
+$ docker-compose down
+
+# bring the database container up first and daemonize it
+$ docker-compose up -d db
+
+# bring the app container up alone, syncronously, so we can see the output
+$ docker-compose up app
+```
+
+Make sure there are no errors in the output. The container will attempt to read the value
+of `BLIS_SERVER_NAME` and set the appropriate `ServerName` directive in the Apache2
+web server configuration and a message will say that it is successful.
+
+Assuming it is successful, you can quit with Ctrl-C and restart as a background process
+(`docker-compose up -d app`).
+
+In a separate terminal window, while BLIS is running, run the script:
+
+```bash
+$ docker-compose exec app get-https-cert.sh
+```
+
+This will verify the environment configuration seems correct and execute the certificate tool for you!
+Answer the questions about the domain to the best of your knowledge.
+
+Once the domain is verified and the certificate installed, you can visit your BLIS instance 
+with an `https://` URL and hopefully it just works!
+
+
+## Troubleshooting
 
 1. There maybe a error when you call `docker-compose` API, the error will show similar to:
 
