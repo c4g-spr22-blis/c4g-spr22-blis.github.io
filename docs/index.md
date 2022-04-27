@@ -1,8 +1,6 @@
 # Home
 
-## Project Demo
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4u8ZT4SDcQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l_7GCSYnZhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Team
 
@@ -10,12 +8,6 @@
 * Victor Li - Software Developer
 * Mitchell Rysavy - Team Lead, Backend/Infrastructure Developer
 * Kristy Sakano - Software Developer
-
-
-
-## Project Status (last updated 2022 April 08)
-
-After a few partner meetings, **we have pivoted to _only_ creating a version of BLIS that runs on a Docker container and can be set up as a cloud service.**
 
 ## Partner Organization
 
@@ -32,10 +24,6 @@ Our partner organization is the group of labs using the C4G BLIS tool currently.
 * Create a version of BLIS that runs in Docker container on a cloud instance
 * Provide [documentation](blis_cloud.md) on setting up BLIS on a cloud server
 * Update user guide for BLIS to account for the new version
-
-### Achievements
-
-`TODO`
 
 ## Feedback and Development
 
